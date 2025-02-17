@@ -1,19 +1,35 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Recipe Book</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
-    <button onclick="greet()">Click me</button>
+    <h1>My Recipe Book</h1>
+
+    <!-- Recipe Form -->
+    <form id="recipe-form">
+        <label for="recipe-title">Recipe Title:</label>
+        <input type="text" id="recipe-title" required>
+
+        <label for="recipe-ingredients">Ingredients:</label>
+        <textarea id="recipe-ingredients" rows="4" required></textarea>
+
+        <label for="recipe-steps">Steps:</label>
+        <textarea id="recipe-steps" rows="4" required></textarea>
+
+        <label for="recipe-image">Dish Image (optional):</label>
+        <input type="file" id="recipe-image" accept="image/*">
+
+        <button type="submit">Add Recipe</button>
+    </form>
+
+    <!-- Recipe Display Section -->
+    <section id="recipe-list"></section>
 
     <script src="script.js"></script>
 </body>
-
 </html>
