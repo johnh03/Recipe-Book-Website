@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Book</title>
+    <title>My Recipe Book</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>My Recipe Book</h1>
 
-    <!-- Recipe Form -->
-    <form id="recipe-form">
-        <label for="recipe-title">Recipe Title:</label>
-        <input type="text" id="recipe-title" required>
+    <div class="container">
+        <div class="input-box">
+            <label for="recipe-title">Enter Recipe Name</label>
+            <input type="text" id="recipe-title" placeholder="Recipe Name" required>
+        </div>
 
-        <label for="recipe-ingredients">Ingredients:</label>
-        <textarea id="recipe-ingredients" rows="4" required></textarea>
+        <div class="input-box">
+            <label for="recipe-ingredients">Ingredients</label>
+            <textarea id="recipe-ingredients" placeholder="List ingredients here..." required></textarea>
+        </div>
 
-        <label for="recipe-steps">Steps:</label>
-        <textarea id="recipe-steps" rows="4" required></textarea>
+        <div class="input-box">
+            <label for="recipe-steps">Instructions</label>
+            <textarea id="recipe-steps" placeholder="List instructions here..." required></textarea>
+        </div>
 
-        <label for="recipe-image">Dish Image (optional):</label>
-        <input type="file" id="recipe-image" accept="image/*">
+        <div class="input-box">
+            <label for="recipe-image">Choose Image</label>
+            <input type="file" id="recipe-image" accept="image/*">
+        </div>
 
-        <button type="submit">Add Recipe</button>
-    </form>
+        <button type="submit" id="add-recipe">Add Recipe</button>
 
-    <!-- Recipe Display Section -->
-    <section id="recipe-list"></section>
+        <section id="recipe-list"></section>
+    </div>
 
     <script src="script.js"></script>
 </body>
