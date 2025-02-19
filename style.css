@@ -44,21 +44,13 @@ h1 {
 }
 
 .input-box input[type="text"],
+.input-box input[type="password"],
 .input-box textarea {
     width: 100%;
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ddd;
     border-radius: 10px;
-}
-
-.input-box input[type="file"] {
-    font-size: 18px;
-}
-
-.input-box textarea {
-    resize: none;
-    height: 150px;
 }
 
 button {
@@ -75,21 +67,19 @@ button:hover {
     background-color: #333;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    font-size: 20px;
+}
+
 #recipe-list {
     width: 100%;
     margin-top: 20px;
-}
-
-.recipe {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.recipe img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
 }
